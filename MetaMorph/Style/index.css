@@ -8,6 +8,7 @@ body {
     background-color: #f4f4f4;
     width: 100vw;
     height: 100vh;
+    overflow: hidden;
 }
 
 .navbar-container {
@@ -67,6 +68,7 @@ body {
     height: 600px;
     background-image: url(/Images/donate-1.png);
     background-repeat: no-repeat;
+    background-size: cover;
     overflow: hidden;
     display: flex;
     flex-direction: column;
@@ -140,5 +142,7 @@ footer{
     font-size: 30px;
     text-align: center;
     padding-top: 30px;
+    position: fixed;
+    bottom: 0;
 }
 

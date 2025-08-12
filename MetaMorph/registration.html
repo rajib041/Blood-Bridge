@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Register - Blood Bridge</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="Style/register.css">
+  <script src="https://kit.fontawesome.com/97ebdf5864.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <!-- Navbar -->
+  <header class="navbar">
+    <nav class="navbar-container">
+      <div class="logo">
+        <i class="fa-solid fa-heart-pulse"></i>
+        <a href=""><h2>Blood Bridge</h2></a>
+      </div>
+      <div class="menu">
+        <span><a href="index.html">Home</a></span>
+        <span><a href="">About Us</a></span>
+        <span><a href="">Contact Us</a></span>
+        <span><a href="login-signup.html">Login</a></span>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Registration Form -->
+  <main class="container">
+    <div class="login-box">
+      <h2>Register</h2>
+      <p class="txt">Create Your Account</p>
+
+      <form action="">
+        <div class="form-group">
+          <input type="text" required name="fullname" id="fullname">
+          <label for="fullname">Full Name</label>
+          <i class="fa-solid fa-user"></i>
+        </div>
+
+        <div class="form-group">
+          <input type="email" required name="email" id="email">
+          <label for="email">Email</label>
+          <i class="fa-solid fa-envelope"></i>
+        </div>
+
+        <div class="form-group">
+          <input type="tel" required name="phone" id="phone">
+          <label for="phone">Phone Number</label>
+          <i class="fa-solid fa-phone"></i>
+        </div>
+
+        <div class="form-group">
+          <input type="password" required name="password" id="password">
+          <label for="password">Password</label>
+          <i class="fa-solid fa-lock"></i>
+        </div>
+
+        <div class="form-group">
+          <input type="password" required name="confirm_password" id="confirm_password">
+          <label for="confirm_password">Confirm Password</label>
+          <i class="fa-solid fa-lock"></i>
+        </div>
+
+        <p class="terms">
+          <label>
+            <input type="checkbox" required>
+            I agree to the <a href="#">Terms & Conditions</a>
+          </label>
+        </p>
+
+        <input id="btn" type="submit" value="Register">
+
+        <p class="register-link">
+          Already have an account? <a href="login-signup.html" class="register-cta">Login</a>
+        </p>
+      </form>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <span><i>&copy; 2025 Blood Bridge. All rights reserved.</i></span>
+  </footer>
+</body>
+</html>
