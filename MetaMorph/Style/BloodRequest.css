@@ -20,6 +20,9 @@ body {
     font-size: 1.8rem;
     opacity: 0.7;
 }
+/* .h2, h2 {
+    font;
+} */
 .navbar-container {
     position: sticky;
     top: 0;
@@ -78,9 +81,101 @@ body {
     padding-left: 20px;
 }
 form>h1{
-    
-}
-div>input{
-    display: block;
+    padding-top: 25px;
+    padding-bottom: 30px;
+    color: crimson;
+    text-align: center;
+    box-sizing: border-box;
 }
 
+.container>.form-card{
+    border: none;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    border-radius: 20px;
+}
+div>input{
+   font-size: 25px;
+   margin-left: 15px;
+
+}
+#blood-group{
+    font-size: 25px;
+    margin-left: 15px;
+}
+
+.col-sm-12>label{
+    font-size: 25px;
+    padding-left:15px;
+    font-weight: 400;
+}
+
+form .btn {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 25px;
+    background-color: crimson;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    transition: 0.2s;
+}
+form .btn:hover {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 25px;
+    background-color: crimson;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    scale: 1.05;
+}
+form .btn:active {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 25px;
+    background-color: rgb(255, 255, 255);
+    color: crimson;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    scale: 0.9;
+}
+
+div>input{
+    border: none;
+    transition: all linear 0.2s;
+    border-bottom: 2px solid rgb(0, 0, 0);
+    outline: none;
+
+
+}
+div>input:hover{
+    outline: none;
+    border-bottom: 2px solid rgba(220, 20, 60, 1);    
+}
+.label-h2{
+    color: crimson;
+    opacity: 0.8;
+}
+
+select{
+    border: none;
+    border-bottom: 2px solid black;
+    outline: none;
+}
+select:hover{
+    outline: none;
+    border-bottom: 2px solid rgba(220, 20, 60, 1); 
+}
+footer {
+    background-color: #333;
+    width: 100%;
+    height: 100px;
+    color: white;
+    font-weight: 300;
+    font-size: 18px;
+    text-align: center;
+    padding-top: 35px;
+}

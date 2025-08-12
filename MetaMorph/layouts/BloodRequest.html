@@ -27,7 +27,7 @@
                 </a>
             </div>
             <div class="menu">
-                <span><a href="">Home</a></span>
+                <span><a href="index.html">Home</a></span>
                 <span><a href="">About Us</a></span>
                 <span><a href="">Contact Us</a></span>
                 <span><a href="login-signup.html">Login/SignUp</a></span>
@@ -45,23 +45,23 @@
                 <form action="">
                     <h1>Receiver Details</h1>
                     <div class="col-sm-6 blood-amount">
-                        <label for="name"><h2>Full Name</h2></label>
+                        <label for="name" class="label-h2"><h2>Full Name</h2></label>
                         <input type="text" placeholder="Enter FullName" id="name" name="name">
                     </div>
                     <div class="col-sm-6 blood-amount">
-                        <label for="email"><h2>Email</h2></label>
+                        <label for="email" class="label-h2"><h2>Email</h2></label>
                         <input type="text" placeholder="Enter Email" id="email" name="email">
                     </div>
                     <div class="col-sm-6 blood-amount">
-                        <label for="location"><h2>Location</h2></label>
+                        <label for="location" class="label-h2"><h2>Location</h2></label>
                         <input type="text" placeholder="Enter Location" id="location" name="location">
                     </div>
                     <div class="col-sm-6 blood-amount">
-                        <label for="city"><h2>City</h2></label>
+                        <label for="city" class="label-h2"><h2>City</h2></label>
                         <input type="text" placeholder="Enter City" id="city" name="city">
                     </div>
                     <div class="col-sm-6 blood-amount"> 
-                         <label for="name"><h2>Blood Group</h2></label>
+                         <label for="name" class="label-h2"><h2>Blood Group</h2></label>
                         <select name="blood-group" id="blood-group">
                             <option value="" selected>Select Blood Type</option>
                             <option value="A+">A+</option>
@@ -75,11 +75,11 @@
                         </select>
                     </div>
                     <div class="col-sm-6 blood-amount">
-                        <label for="number"><h2>Phone Number</h2></label>
+                        <label for="number" class="label-h2"><h2>Phone Number</h2></label>
                         <input type="number" placeholder="Enter Number" id="number" name="number">
                     </div>
                      <div class="col-sm-12 blood-amount">
-                        <h2>Gender</h2>
+                        <h2 class="label-h2" style="display: inline-block;">Gender</h2>
                         <label for="male">Male</label>
                         <input type="radio" id="gender" name="gender" style="display: inline-block;">
                         <label for="female">Female</label>
@@ -87,10 +87,16 @@
                         <label for="others">Others</label>
                         <input type="radio" id="gender" name="gender" style="display: inline-block;">
                     </div>
-                    <button type="button">Send Request</button>
+                    <div class="col-sm-12" style="text-align:center;">
+    <button class="btn" type="button">Send Request</button>
+</div>
+
                 </form>
             </div>
         </div>
+        <footer>
+            <span><i>&copy; 2025 Blood Bridge. All rights reserved.</i></span>
+          </footer>
     </main>
 </body>
 
