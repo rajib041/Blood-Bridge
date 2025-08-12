@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blood Request</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="/MetaMorph/Style/BloodRequest.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <header class="navbar">
+        <nav class="navbar-container">
+            <div class="logo">
+                <i class="fa-solid fa-heart-pulse"></i>
+                <a href="">
+                    <h2>Blood Bridge</h2>
+                </a>
+            </div>
+            <div class="menu">
+                <span><a href="">Home</a></span>
+                <span><a href="">About Us</a></span>
+                <span><a href="">Contact Us</a></span>
+                <span><a href="login-signup.html">Login/SignUp</a></span>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container ">
+            <h1>
+                Submit a Blood Request
+            </h1>
+            <p>Please provide details of your urgent blood requirement.</p>
+            <div class="form-card">
+                <form action="">
+                    <h1>Receiver Details</h1>
+                    <div class="col-sm-6 blood-amount">
+                        <label for="name"><h2>Full Name</h2></label>
+                        <input type="text" placeholder="Enter FullName" id="name" name="name">
+                    </div>
+                    <div class="col-sm-6 blood-amount">
+                        <label for="email"><h2>Email</h2></label>
+                        <input type="text" placeholder="Enter Email" id="email" name="email">
+                    </div>
+                    <div class="col-sm-6 blood-amount">
+                        <label for="location"><h2>Location</h2></label>
+                        <input type="text" placeholder="Enter Location" id="location" name="location">
+                    </div>
+                    <div class="col-sm-6 blood-amount">
+                        <label for="city"><h2>City</h2></label>
+                        <input type="text" placeholder="Enter City" id="city" name="city">
+                    </div>
+                    <div class="col-sm-6 blood-amount"> 
+                         <label for="name"><h2>Blood Group</h2></label>
+                        <select name="blood-group" id="blood-group">
+                            <option value="" selected>Select Blood Type</option>
+                            <option value="A+">A+</option>
+                            <option value="A-">A-</option>
+                            <option value="B+">B+</option>
+                            <option value="B-">B-</option>
+                            <option value="AB+">AB+</option>
+                            <option value="AB-">AB-</option>
+                            <option value="O+">O+</option>
+                            <option value="O-">O-</option>
+                        </select>
+                    </div>
+                    <div class="col-sm-6 blood-amount">
+                        <label for="number"><h2>Phone Number</h2></label>
+                        <input type="number" placeholder="Enter Number" id="number" name="number">
+                    </div>
+                     <div class="col-sm-12 blood-amount">
+                        <h2>Gender</h2>
+                        <label for="male">Male</label>
+                        <input type="radio" id="gender" name="gender" style="display: inline-block;">
+                        <label for="female">Female</label>
+                        <input type="radio" id="gender" name="gender" style="display: inline-block;">
+                        <label for="others">Others</label>
+                        <input type="radio" id="gender" name="gender" style="display: inline-block;">
+                    </div>
+                    <button type="button">Send Request</button>
+                </form>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>

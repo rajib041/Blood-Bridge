@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+.container>h1{
+    color: crimson;
+    text-align: center;
+    font-size: 5.5rem;
+}
+.container>p{
+    text-align: center;
+    font-size: 1.8rem;
+    opacity: 0.7;
+}
+.navbar-container {
+    position: sticky;
+    top: 0;
+    box-sizing: border-box;
+    width: 100vw;
+    height: 100px;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.navbar-container .logo h2 {
+    display: inline-block;
+    font-size: 50px;
+    color: crimson;
+}
+
+.navbar-container i {
+    display: inline-block;
+    font-size: 50px;
+    color: crimson;
+}
+
+.navbar-container .menu>span>a {
+    color: red;
+    text-decoration: none;
+    font-size: 25px;
+    background-color: white;
+    padding: 10px;
+    border-radius: 15px;
+    border: none;
+    font-weight: 400;
+    transition: all ease 400ms;
+}
+
+.navbar-container .menu>span>a:hover {
+    background-color: crimson;
+    color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    font-weight: 900;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 30px;
+    padding: 0 25px;
+}
+.form-card{
+    border: 2px solid black;
+    width: 100%;
+    height: 500px;
+    padding-left: 20px;
+}
+form>h1{
+    
+}
+div>input{
+    display: block;
+}
+
