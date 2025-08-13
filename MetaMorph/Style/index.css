@@ -6,10 +6,8 @@
 
 body {
     background-color: #f4f4f4;
-    width: 100vw;
-    height: 100vh;
-    overflow: hidden;
 }
+
 
 .navbar-container {
     position: sticky;
@@ -66,7 +64,7 @@ body {
 .hero-section {
     width: 100vw;
     height: 600px;
-    background-image: url(/Images/donate-1.png);
+    background-image: url("../Images/donate-1.png");
     background-repeat: no-repeat;
     background-size: cover;
     overflow: hidden;
@@ -136,13 +134,13 @@ footer{
     box-sizing: border-box;
     background-color: #333333;
     width: 100vw;
-    height: 150px;  
+    height: 100px;  
     color: white;
     font-weight: 300;
     font-size: 30px;
     text-align: center;
     padding-top: 30px;
-    position: fixed;
+    position: relative;
     bottom: 0;
 }
 

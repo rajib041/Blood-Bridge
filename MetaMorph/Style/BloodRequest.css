@@ -8,7 +8,6 @@ body {
     background-color: #f4f4f4;
     width: 100vw;
     height: 100vh;
-    overflow: hidden;
 }
 .container>h1{
     color: crimson;
@@ -79,6 +78,7 @@ body {
     width: 100%;
     height: 500px;
     padding-left: 20px;
+    margin-bottom: 20px;
 }
 form>h1{
     padding-top: 25px;
@@ -169,13 +169,27 @@ select:hover{
     outline: none;
     border-bottom: 2px solid rgba(220, 20, 60, 1); 
 }
-footer {
-    background-color: #333;
-    width: 100%;
-    height: 100px;
+input[type="radio"] {
+    accent-color: crimson; 
+    width: 15px;
+    height: 15px;
+    cursor: pointer;
+}
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+footer{
+    box-sizing: border-box;
+    background-color: #333333;
+    width: 100vw;
+    height: 100px;  
     color: white;
     font-weight: 300;
-    font-size: 18px;
+    font-size: 30px;
     text-align: center;
-    padding-top: 35px;
+    padding-top: 30px;
+    position: relative;
+    bottom: 0;
 }
