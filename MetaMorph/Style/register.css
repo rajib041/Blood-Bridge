@@ -170,7 +170,7 @@ input:valid ~ label {
 }
 
 /* Button */
-#btn {
+#sub-btn{
   width: 100%;
   height: 50px;
   background: #000;
@@ -185,11 +185,11 @@ input:valid ~ label {
   transition: 0.4s;
 }
 
-#btn:hover {
+#sub-btn:hover {
   background: crimson;
   scale: 1.05;
 }
-#btn:active{
+#sub-btn:active{
   scale: 0.9;
 }
 
