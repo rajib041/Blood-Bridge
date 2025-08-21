@@ -103,10 +103,12 @@
             border-radius: 15px;
             box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
         }
-        .main-cards-logo{
+
+        .main-cards-logo {
             font-size: 40px;
         }
-        .main-cards-content button{
+
+        .main-cards-content button {
             color: white;
             margin: 20px 0px;
             transform: scale(1.5);
@@ -115,30 +117,78 @@
             background-color: #dc3545;
             border-radius: 5px;
             cursor: pointer;
-            transition:  transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;;
+            transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+            ;
         }
-         .main-cards-content button:hover{
+
+        .main-cards-content button:hover {
             background-color: #c82333;
             transform: scale(1.6);
-            box-shadow:0 0 5px rgba(0, 0, 0, 0.2) ;
-         }
-        .main-cards-content>p{
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+        }
+
+        .main-cards-content>p {
             font-size: 20px;
             font-weight: 300;
             margin-bottom: 10px;
         }
-        .main-cards-content>h4{
+
+        .main-cards-content>h4 {
             font-size: 30px;
             font-weight: 500;
             color: #2d3032;
             margin-bottom: 10px;
         }
-        .fa-magnifying-glass{
+
+        .fa-magnifying-glass {
             color: #0d6efd;
         }
-        .white{
+
+        .white {
             color: white;
         }
+
+        .page-info {
+            text-align: center;
+            margin-top: 40px;
+            width: 90vw;
+            height: 400px;
+            margin: auto;
+        }
+
+        .page-info-cards {
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        .page-info>h2 {
+            font-size: 50px;
+            margin: 70px 0px;
+        }
+        footer{
+            width: 100%;
+            height: 300px;
+            background-color: #c82333;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+        }
+        .footer-contain { 
+            padding: 50px;
+            color: white;
+            width: 70vw;
+            height: 150px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            font-size: 30px;
+            font-weight: 200;
+
+        }
+        .footer-contain h2{
+            font-size: 50px;
+        }
+
     </style>
 </head>
 
@@ -168,7 +218,8 @@
                 <div class="main-cards-content">
                     <h4>Find Donors</h4>
                     <p>Search for blood donors by blood type and location. Get instant matches for your needs.</p>
-                    <button><i class="fa-solid fa-magnifying-glass white" style="margin-right: 8px;"></i>SearchNow</button>
+                    <button><i class="fa-solid fa-magnifying-glass white"
+                            style="margin-right: 8px;"></i>SearchNow</button>
                 </div>
             </div>
             <div class="main-cards">
@@ -194,7 +245,37 @@
 
         </div>
     </main>
-
+    <div class="page-info">
+        <h2>Why Choose Blood Bridge?</h2>
+        <div class="page-info-cards">
+            <div class="main-cards-content">
+                <h4>Find Donors</h4>
+                <p>Search for blood donors by blood type and location. Get instant matches for your needs.</p>
+                <button>SearchNow</button>
+            </div>
+            <div class="main-cards-content">
+                <h4>Find Donors</h4>
+                <p>Search for blood donors by blood type and location. Get instant matches for your needs.</p>
+                <button>SearchNow</button>
+            </div>
+            <div class="main-cards-content">
+                <h4>Find Donors</h4>
+                <p>Search for blood donors by blood type and location. Get instant matches for your needs.</p>
+                <button>SearchNow</button>
+            </div>
+            <div class="main-cards-content">
+                <h4>Find Donors</h4>
+                <p>Search for blood donors by blood type and location. Get instant matches for your needs.</p>
+                <button>SearchNow</button>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-contain">
+            <h2>Ready to Save Lives?</h2>
+            <p>Join thousands of donors and recipients who are making a difference every day.</p>
+        </div>
+    </footer>
 </body>
 
 </html>
