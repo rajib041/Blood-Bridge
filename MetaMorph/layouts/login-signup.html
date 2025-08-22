@@ -10,21 +10,86 @@
   <link rel="stylesheet" href="/MetaMorph/Style/login.css">
   <script src="https://kit.fontawesome.com/97ebdf5864.js" crossorigin="anonymous"></script>
   <script type="module" src="/MetaMorph/Server/login.js" defer></script>
+  <style>
+    * {
+            margin: 0px;
+            padding: 0px;
+            font-family: "Roboto", sans-serif;
+            ;
+        }
+
+        body {
+            background-color: #f8f9fa;
+        }
+
+        nav {
+            box-sizing: border-box;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 100px;
+            background-color: crimson;
+            width: 100%;
+            flex-shrink: 0;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        }
+
+        .logo {
+            color: white;
+            font-size: 40px;
+            font-weight: 600;
+        }
+
+        .menu {
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 45px;
+        }
+
+        .menu span>a {
+            font-size: 20px;
+            text-decoration: none;
+            color: rgba(255, 255, 255, 0.701);
+            transition: all ease 500ms;
+        }
+
+        .menu span>a:hover {
+            color: rgba(255, 255, 255, 1);
+        }
+
+        footer{
+            width: 100%;
+            height: 100px;
+            background-color: #171717;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+        }
+        footer p{
+            font-size: 20px;
+            color: white;
+            text-align: center;
+            margin: auto 0px;
+        }
+  </style>
 </head>
 <body>
   <header class="navbar">
-    <nav class="navbar-container">
+    <nav>
       <div class="logo">
-        <i class="fa-solid fa-heart-pulse"></i>
-        <a href=""><h2>Blood Bridge</h2></a>
+          <span><i class="fa-solid fa-heart-pulse"></i></span>
+          <span>Blood Bridge</span>
       </div>
       <div class="menu">
-        <span><a href="index.html">Home</a></span>
-        <span><a href="">About Us</a></span>
-        <span><a href="">Contact Us</a></span>
-        <span><a href="#">Login/SignUp</a></span>
+          <span><a href="index.html">Home</a></span>
+          <span><a href="">Find Donors</a></span>
+          <span><a href="">Post Request</a></span>
+          <span><a href="">About us</a></span>
+          <span><a href="">Login/Signup</a></span>
       </div>
-    </nav>
+  </nav>
   </header>
 
   <main class="container">
@@ -52,8 +117,8 @@
           </label>
           <a href="#" class="forgot-link">Forgot password?</a>
         </p>
-
-        <input id="btn" type="submit" value="Login">
+        
+        <button id="btn"><i class="fa-solid fa-right-from-bracket" style="color: #ffffff;margin-right: 8px;"></i>Login</button>
 
         <p class="register-link">
           Don't have an account?
@@ -64,7 +129,7 @@
   </main>
 
   <footer>
-    <span><i>&copy; 2025 Blood Bridge. All rights reserved.</i></span>
-  </footer>
+    <p>&copy; 2025 Blood Bridge. Connecting donors, recipients, and hospitals</p>    
+</footer>
 </body>
 </html>

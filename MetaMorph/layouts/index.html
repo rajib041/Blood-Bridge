@@ -167,26 +167,59 @@
         }
         footer{
             width: 100%;
-            height: 300px;
-            background-color: #c82333;
+            height: 100px;
+            background-color: #171717;
             text-align: center;
             display: flex;
             justify-content: center;
         }
-        .footer-contain { 
-            padding: 50px;
+        footer p{
+            font-size: 20px;
             color: white;
+            text-align: center;
+            margin: auto 0px;
+        }
+        .rich-text { 
             width: 70vw;
-            height: 150px;
+            height: 300px;
+            background-color: #c82333;
+            text-align: center;
+
+            color: white;
             display: flex;
             flex-direction: column;
             justify-content: space-evenly;
             font-size: 30px;
             font-weight: 200;
-
+            margin: 30px auto;
         }
-        .footer-contain h2{
+        .rich-text h2{
             font-size: 50px;
+        }
+        .btn-1{
+            color: rgb(0, 0, 0);
+            margin: 20px 0px;
+            transform: scale(1.5);
+            padding: 5px 10px;
+            border: none;
+            background-color: #ffffff;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+            ;
+        }
+        .btn-2{
+            color: white;
+            margin: 20px 0px;
+            transform: scale(1.5);
+            padding: 5px 10px;
+            border: 1px solid white;
+            background-color: transparent;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+            ;
+            margin-left: 60px;
         }
 
     </style>
@@ -224,22 +257,22 @@
             </div>
             <div class="main-cards">
                 <div class="main-cards-logo">
-                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <i class="fas fa-user-plus text-danger" style="color: crimson;"></i>
                 </div>
                 <div class="main-cards-content">
-                    <h4>Find Donors</h4>
+                    <h4>Become a Donor</h4>
                     <p>Search for blood donors by blood type and location. Get instant matches for your needs.</p>
-                    <button>SearchNow</button>
+                    <button><i class="fas fa-user-plus text-danger" style="color: rgb(255, 255, 255); margin-right: 8px;"></i>Register Now</button>
                 </div>
             </div>
             <div class="main-cards">
                 <div class="main-cards-logo">
-                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <i class="fa-solid fa-circle-plus" style="color: #0cdfa0;"></i>
                 </div>
                 <div class="main-cards-content">
-                    <h4>Find Donors</h4>
+                    <h4>Post Request</h4>
                     <p>Search for blood donors by blood type and location. Get instant matches for your needs.</p>
-                    <button>SearchNow</button>
+                    <button><i class="fa-solid fa-right-from-bracket" style="color: #ffffff;margin-right: 8px;"></i>Login to Post</button>
                 </div>
             </div>
 
@@ -249,32 +282,37 @@
         <h2>Why Choose Blood Bridge?</h2>
         <div class="page-info-cards">
             <div class="main-cards-content">
-                <h4>Find Donors</h4>
-                <p>Search for blood donors by blood type and location. Get instant matches for your needs.</p>
-                <button>SearchNow</button>
+                <i class="fa-solid fa-bolt fa-2xl" style="color: #FFD43B; margin-bottom: 30px;"></i>
+                <h4>Fast Matching</h4>
+                <p>AI-powered matching system finds donors in seconds</p>
             </div>
             <div class="main-cards-content">
-                <h4>Find Donors</h4>
-                <p>Search for blood donors by blood type and location. Get instant matches for your needs.</p>
-                <button>SearchNow</button>
+                <i class="fa-solid fa-shield fa-2xl" style="color: #63E6BE;margin-bottom: 30px;"></i>
+                <h4>Verified Users</h4>
+                <p>All users are verified for safety and reliability</p>
             </div>
             <div class="main-cards-content">
-                <h4>Find Donors</h4>
-                <p>Search for blood donors by blood type and location. Get instant matches for your needs.</p>
-                <button>SearchNow</button>
+                <i class="fa-solid fa-chart-line fa-2xl" style="color: #00b37d;margin-bottom: 30px;"></i>
+                <h4>Ml Prediction</h4>
+                <p>Predict blood shortages using machine learning</p>
             </div>
             <div class="main-cards-content">
-                <h4>Find Donors</h4>
-                <p>Search for blood donors by blood type and location. Get instant matches for your needs.</p>
-                <button>SearchNow</button>
+                <i class="fa-solid fa-mobile-screen fa-2xl" style="color: #0057b3;margin-bottom: 30px;"></i>
+                <h4>Mobile Friendly</h4>
+                <p>Access from anywhere on any device</p>
             </div>
         </div>
     </div>
-    <footer>
-        <div class="footer-contain">
-            <h2>Ready to Save Lives?</h2>
-            <p>Join thousands of donors and recipients who are making a difference every day.</p>
+    <div class="rich-text">
+        <h2>Ready to Save Lives?</h2>
+        <p>Join thousands of donors and recipients who are making a difference every day.</p>
+        <div class="rich-btn">
+            <button class="btn-1"><i class="fas fa-user-plus text-danger" style="color: rgb(0, 0, 0);margin-right: 10px;"></i>Get Started</button>
+            <button class="btn-2"><i class="fa-solid fa-magnifying-glass" style="color: white; margin-right: 10px;"></i>Find Donor</button>
         </div>
+    </div>
+    <footer>
+        <p>&copy; 2025 Blood Bridge. Connecting donors, recipients, and hospitals</p>    
     </footer>
 </body>
 
