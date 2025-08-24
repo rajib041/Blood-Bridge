@@ -1,319 +1,378 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Blood Bridge</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="/MetaMorph/Style/index.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/MetaMorph/Style/index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+    />
     <style>
-        * {
-            margin: 0px;
-            padding: 0px;
-            font-family: "Roboto", sans-serif;
-            ;
-        }
+      * {
+        margin: 0px;
+        padding: 0px;
+        font-family: "Roboto", sans-serif;
+      }
 
-        body {
-            background-color: #f8f9fa;
-        }
+      body {
+        background-color: #f8f9fa;
+      }
 
-        nav {
-            box-sizing: border-box;
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-            height: 100px;
-            background-color: crimson;
-            width: 100%;
-            flex-shrink: 0;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-        }
+      nav {
+        box-sizing: border-box;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 100px;
+        background-color: crimson;
+        width: 100%;
+        flex-shrink: 0;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+      }
 
-        .logo {
-            color: white;
-            font-size: 40px;
-            font-weight: 600;
-        }
+      .logo {
+        color: white;
+        font-size: 40px;
+        font-weight: 600;
+      }
 
-        .menu {
-            height: 100%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 45px;
-        }
+      .menu {
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 45px;
+      }
 
-        .menu span>a {
-            font-size: 20px;
-            text-decoration: none;
-            color: rgba(255, 255, 255, 0.701);
-            transition: all ease 500ms;
-        }
+      .menu span > a {
+        font-size: 20px;
+        text-decoration: none;
+        color: rgba(255, 255, 255, 0.701);
+        transition: all ease 500ms;
+      }
 
-        .menu span>a:hover {
-            color: rgba(255, 255, 255, 1);
-        }
+      .menu span > a:hover {
+        color: rgba(255, 255, 255, 1);
+      }
 
-        main {
-            text-align: center;
-            box-sizing: border-box;
-            width: 90vw;
-            height: 662px;
-            margin: 20px auto;
-            background-color: #eef0f2;
-            border-radius: 25px;
-            box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
-        }
+      main {
+        text-align: center;
+        box-sizing: border-box;
+        width: 90vw;
+        height: 662px;
+        margin: 20px auto;
+        background-color: #eef0f2;
+        border-radius: 25px;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+      }
 
-        main>h1 {
-            padding-top: 50px;
-            margin: 50px 0px;
-            color: #dc3545;
-            font-size: 70px;
-        }
+      main > h1 {
+        padding-top: 50px;
+        margin: 50px 0px;
+        color: #dc3545;
+        font-size: 70px;
+      }
 
-        main>h1>i {
-            margin-right: 20px;
-        }
+      main > h1 > i {
+        margin-right: 20px;
+      }
 
-        main>p {
-            opacity: 0.5;
-            font-size: 25px;
-            padding-bottom: 20px;
-            font-weight: 300;
-        }
+      main > p {
+        opacity: 0.5;
+        font-size: 25px;
+        padding-bottom: 20px;
+        font-weight: 300;
+      }
 
-        .main-card-container {
-            display: flex;
-            justify-content: space-around;
-            gap: 20px;
-        }
+      .main-card-container {
+        display: flex;
+        justify-content: space-around;
+        gap: 20px;
+      }
 
-        .main-cards {
-            width: 30%;
-            background-color: white;
-            padding: 20px;
-            border-radius: 15px;
-            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-        }
+      .main-cards {
+        width: 30%;
+        background-color: white;
+        padding: 20px;
+        border-radius: 15px;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+      }
 
-        .main-cards-logo {
-            font-size: 40px;
-        }
+      .main-cards-logo {
+        font-size: 40px;
+      }
 
-        .main-cards-content button {
-            color: white;
-            margin: 20px 0px;
-            transform: scale(1.5);
-            padding: 5px 10px;
-            border: none;
-            background-color: #dc3545;
-            border-radius: 5px;
-            cursor: pointer;
-            transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
-            ;
-        }
+      .main-cards-content button {
+        color: white;
+        margin: 20px 0px;
+        transform: scale(1.5);
+        padding: 5px 10px;
+        border: none;
+        background-color: #dc3545;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: transform 0.3s ease, background-color 0.3s ease,
+          box-shadow 0.3s ease;
+      }
 
-        .main-cards-content button:hover {
-            background-color: #c82333;
-            transform: scale(1.6);
-            box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
-        }
+      .main-cards-content button:hover {
+        background-color: #c82333;
+        transform: scale(1.6);
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+      }
 
-        .main-cards-content>p {
-            font-size: 20px;
-            font-weight: 300;
-            margin-bottom: 10px;
-        }
+      .main-cards-content > p {
+        font-size: 20px;
+        font-weight: 300;
+        margin-bottom: 10px;
+      }
 
-        .main-cards-content>h4 {
-            font-size: 30px;
-            font-weight: 500;
-            color: #2d3032;
-            margin-bottom: 10px;
-        }
+      .main-cards-content > h4 {
+        font-size: 30px;
+        font-weight: 500;
+        color: #2d3032;
+        margin-bottom: 10px;
+      }
 
-        .fa-magnifying-glass {
-            color: #0d6efd;
-        }
+      .fa-magnifying-glass {
+        color: #0d6efd;
+      }
 
-        .white {
-            color: white;
-        }
+      .white {
+        color: white;
+      }
 
-        .page-info {
-            text-align: center;
-            margin-top: 40px;
-            width: 90vw;
-            height: 400px;
-            margin: auto;
-        }
+      .page-info {
+        text-align: center;
+        margin-top: 40px;
+        width: 90vw;
+        height: 400px;
+        margin: auto;
+      }
 
-        .page-info-cards {
-            display: flex;
-            justify-content: space-evenly;
-        }
+      .page-info-cards {
+        display: flex;
+        justify-content: space-evenly;
+      }
 
-        .page-info>h2 {
-            font-size: 50px;
-            margin: 70px 0px;
-        }
-        footer{
-            width: 100%;
-            height: 100px;
-            background-color: #171717;
-            text-align: center;
-            display: flex;
-            justify-content: center;
-        }
-        footer p{
-            font-size: 20px;
-            color: white;
-            text-align: center;
-            margin: auto 0px;
-        }
-        .rich-text { 
-            width: 70vw;
-            height: 300px;
-            background-color: #c82333;
-            text-align: center;
+      .page-info > h2 {
+        font-size: 50px;
+        margin: 70px 0px;
+      }
+      footer {
+        width: 100%;
+        height: 100px;
+        background-color: #171717;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+      }
+      footer p {
+        font-size: 20px;
+        color: white;
+        text-align: center;
+        margin: auto 0px;
+      }
+      .rich-text {
+        width: 70vw;
+        height: 300px;
+        background-color: #c82333;
+        text-align: center;
 
-            color: white;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-evenly;
-            font-size: 30px;
-            font-weight: 200;
-            margin: 30px auto;
-        }
-        .rich-text h2{
-            font-size: 50px;
-        }
-        .btn-1{
-            color: rgb(0, 0, 0);
-            margin: 20px 0px;
-            transform: scale(1.5);
-            padding: 5px 10px;
-            border: none;
-            background-color: #ffffff;
-            border-radius: 5px;
-            cursor: pointer;
-            transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
-            ;
-        }
-        .btn-2{
-            color: white;
-            margin: 20px 0px;
-            transform: scale(1.5);
-            padding: 5px 10px;
-            border: 1px solid white;
-            background-color: transparent;
-            border-radius: 5px;
-            cursor: pointer;
-            transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
-            ;
-            margin-left: 60px;
-        }
-
+        color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        font-size: 30px;
+        font-weight: 200;
+        margin: 30px auto;
+      }
+      .rich-text h2 {
+        font-size: 50px;
+      }
+      .btn-1 {
+        color: rgb(0, 0, 0);
+        margin: 20px 0px;
+        transform: scale(1.5);
+        padding: 5px 10px;
+        border: none;
+        background-color: #ffffff;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: transform 0.3s ease, background-color 0.3s ease,
+          box-shadow 0.3s ease;
+      }
+      .btn-2 {
+        color: white;
+        margin: 20px 0px;
+        transform: scale(1.5);
+        padding: 5px 10px;
+        border: 1px solid white;
+        background-color: transparent;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: transform 0.3s ease, background-color 0.3s ease,
+          box-shadow 0.3s ease;
+        margin-left: 60px;
+      }
     </style>
-</head>
+  </head>
 
-<body>
-    <nav>
+  <body>
+    <header>
+      <nav>
         <div class="logo">
-            <span><i class="fa-solid fa-heart-pulse"></i></span>
-            <span>Blood Bridge</span>
+          <span><i class="fa-solid fa-heart-pulse"></i></span>
+          <span>Blood Bridge</span>
         </div>
         <div class="menu">
-            <span><a href="">Home</a></span>
-            <span><a href="">Find Donors</a></span>
-            <span><a href="">Post Request</a></span>
-            <span><a href="">About us</a></span>
-            <span><a href="">Login/Signup</a></span>
+          <span><a href="">Home</a></span>
+          <span><a href="">Find Donors</a></span>
+          <span><a href="">Post Request</a></span>
+          <span><a href="">About us</a></span>
+          <span><a href="">Login/Signup</a></span>
         </div>
-    </nav>
+      </nav>
+    </header>
     <main>
-        <h1><i class="fa-solid fa-heart-pulse"></i>Blood Bridge</h1>
-        <p>Connecting blood donors, recipients, and hospitals through intelligent matching</p>
-        <p>Save lives by finding the right blood type at the right time</p>
-        <div class="main-card-container">
-            <div class="main-cards">
-                <div class="main-cards-logo">
-                    <i class="fa-solid fa-magnifying-glass"></i>
-                </div>
-                <div class="main-cards-content">
-                    <h4>Find Donors</h4>
-                    <p>Search for blood donors by blood type and location. Get instant matches for your needs.</p>
-                    <button><i class="fa-solid fa-magnifying-glass white"
-                            style="margin-right: 8px;"></i>SearchNow</button>
-                </div>
-            </div>
-            <div class="main-cards">
-                <div class="main-cards-logo">
-                    <i class="fas fa-user-plus text-danger" style="color: crimson;"></i>
-                </div>
-                <div class="main-cards-content">
-                    <h4>Become a Donor</h4>
-                    <p>Search for blood donors by blood type and location. Get instant matches for your needs.</p>
-                    <button><i class="fas fa-user-plus text-danger" style="color: rgb(255, 255, 255); margin-right: 8px;"></i>Register Now</button>
-                </div>
-            </div>
-            <div class="main-cards">
-                <div class="main-cards-logo">
-                    <i class="fa-solid fa-circle-plus" style="color: #0cdfa0;"></i>
-                </div>
-                <div class="main-cards-content">
-                    <h4>Post Request</h4>
-                    <p>Search for blood donors by blood type and location. Get instant matches for your needs.</p>
-                    <button><i class="fa-solid fa-right-from-bracket" style="color: #ffffff;margin-right: 8px;"></i>Login to Post</button>
-                </div>
-            </div>
-
+      <h1><i class="fa-solid fa-heart-pulse"></i>Blood Bridge</h1>
+      <p>
+        Connecting blood donors, recipients, and hospitals through intelligent
+        matching
+      </p>
+      <p>Save lives by finding the right blood type at the right time</p>
+      <div class="main-card-container">
+        <div class="main-cards">
+          <div class="main-cards-logo">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </div>
+          <div class="main-cards-content">
+            <h4>Find Donors</h4>
+            <p>
+              Search for blood donors by blood type and location. Get instant
+              matches for your needs.
+            </p>
+            <button>
+              <i
+                class="fa-solid fa-magnifying-glass white"
+                style="margin-right: 8px"
+              ></i
+              >SearchNow
+            </button>
+          </div>
         </div>
+        <div class="main-cards">
+          <div class="main-cards-logo">
+            <i class="fas fa-user-plus text-danger" style="color: crimson"></i>
+          </div>
+          <div class="main-cards-content">
+            <h4>Become a Donor</h4>
+            <p>
+              Search for blood donors by blood type and location. Get instant
+              matches for your needs.
+            </p>
+            <button>
+              <i
+                class="fas fa-user-plus text-danger"
+                style="color: rgb(255, 255, 255); margin-right: 8px"
+              ></i
+              >Register Now
+            </button>
+          </div>
+        </div>
+        <div class="main-cards">
+          <div class="main-cards-logo">
+            <i class="fa-solid fa-circle-plus" style="color: #0cdfa0"></i>
+          </div>
+          <div class="main-cards-content">
+            <h4>Post Request</h4>
+            <p>
+              Search for blood donors by blood type and location. Get instant
+              matches for your needs.
+            </p>
+            <button>
+              <i
+                class="fa-solid fa-right-from-bracket"
+                style="color: #ffffff; margin-right: 8px"
+              ></i
+              >Login to Post
+            </button>
+          </div>
+        </div>
+      </div>
     </main>
     <div class="page-info">
-        <h2>Why Choose Blood Bridge?</h2>
-        <div class="page-info-cards">
-            <div class="main-cards-content">
-                <i class="fa-solid fa-bolt fa-2xl" style="color: #FFD43B; margin-bottom: 30px;"></i>
-                <h4>Fast Matching</h4>
-                <p>AI-powered matching system finds donors in seconds</p>
-            </div>
-            <div class="main-cards-content">
-                <i class="fa-solid fa-shield fa-2xl" style="color: #63E6BE;margin-bottom: 30px;"></i>
-                <h4>Verified Users</h4>
-                <p>All users are verified for safety and reliability</p>
-            </div>
-            <div class="main-cards-content">
-                <i class="fa-solid fa-chart-line fa-2xl" style="color: #00b37d;margin-bottom: 30px;"></i>
-                <h4>Ml Prediction</h4>
-                <p>Predict blood shortages using machine learning</p>
-            </div>
-            <div class="main-cards-content">
-                <i class="fa-solid fa-mobile-screen fa-2xl" style="color: #0057b3;margin-bottom: 30px;"></i>
-                <h4>Mobile Friendly</h4>
-                <p>Access from anywhere on any device</p>
-            </div>
+      <h2>Why Choose Blood Bridge?</h2>
+      <div class="page-info-cards">
+        <div class="main-cards-content">
+          <i
+            class="fa-solid fa-bolt fa-2xl"
+            style="color: #ffd43b; margin-bottom: 30px"
+          ></i>
+          <h4>Fast Matching</h4>
+          <p>AI-powered matching system finds donors in seconds</p>
         </div>
+        <div class="main-cards-content">
+          <i
+            class="fa-solid fa-shield fa-2xl"
+            style="color: #63e6be; margin-bottom: 30px"
+          ></i>
+          <h4>Verified Users</h4>
+          <p>All users are verified for safety and reliability</p>
+        </div>
+        <div class="main-cards-content">
+          <i
+            class="fa-solid fa-chart-line fa-2xl"
+            style="color: #00b37d; margin-bottom: 30px"
+          ></i>
+          <h4>ML Prediction</h4>
+          <p>Predict blood shortages using machine learning</p>
+        </div>
+        <div class="main-cards-content">
+          <i
+            class="fa-solid fa-mobile-screen fa-2xl"
+            style="color: #0057b3; margin-bottom: 30px"
+          ></i>
+          <h4>Mobile Friendly</h4>
+          <p>Access from anywhere on any device</p>
+        </div>
+      </div>
     </div>
     <div class="rich-text">
-        <h2>Ready to Save Lives?</h2>
-        <p>Join thousands of donors and recipients who are making a difference every day.</p>
-        <div class="rich-btn">
-            <button class="btn-1"><i class="fas fa-user-plus text-danger" style="color: rgb(0, 0, 0);margin-right: 10px;"></i>Get Started</button>
-            <button class="btn-2"><i class="fa-solid fa-magnifying-glass" style="color: white; margin-right: 10px;"></i>Find Donor</button>
-        </div>
+      <h2>Ready to Save Lives?</h2>
+      <p>
+        Join thousands of donors and recipients who are making a difference
+        every day.
+      </p>
+      <div class="rich-btn">
+        <button class="btn-1">
+          <i
+            class="fas fa-user-plus text-danger"
+            style="color: rgb(0, 0, 0); margin-right: 10px"
+          ></i
+          >Get Started
+        </button>
+        <button class="btn-2">
+          <i
+            class="fa-solid fa-magnifying-glass"
+            style="color: white; margin-right: 10px"
+          ></i
+          >Find Donor
+        </button>
+      </div>
     </div>
     <footer>
-        <p>&copy; 2025 Blood Bridge. Connecting donors, recipients, and hospitals</p>    
+      <p>
+        &copy; 2025 Blood Bridge. Connecting donors, recipients, and hospitals
+      </p>
     </footer>
-</body>
-
+  </body>
 </html>
